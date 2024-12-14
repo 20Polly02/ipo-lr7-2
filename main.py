@@ -15,7 +15,7 @@ with open("dump.json", 'r', encoding='utf-8') as file:  # открываем ф�
                 
 if not find:  # если переменная не найдена
     print("Не найдено")  #вывод на консоль
-    exit()
+    exit()#выход
 for specialty in info_file:  # перебираем каждый элемент в info_file
     if specialty.get("model") == "data.specialty":  # проверяем, является ли значение "model" = data.specialty"
         specialty_code = specialty["fields"].get("code")  # получаем код специальности
